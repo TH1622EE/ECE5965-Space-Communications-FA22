@@ -1,4 +1,4 @@
-# ECE5965 - Satellite Communications - FA22 - Project 1
+# ECE5965 Project 1
 
 ## First Option
 Project Title: Satellite Constellation Simulation Research
