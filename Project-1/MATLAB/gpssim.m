@@ -18,7 +18,8 @@ sats = [sat1 sat2 sat3 sat4 sat5 sat6];
 
 % Show satellites in orbit and plot ground tracks
 show(sats)
-groundTrack(sats, "LeadTime", 1200)
+% groundTrack(sats, "LeadTime", 1200)
+groundTrack(sats, "Viewer", 100)
 
 % Display orbital elements of satellite
 % ele1 = orbitalElements(sats(1))

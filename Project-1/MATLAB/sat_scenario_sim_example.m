@@ -31,7 +31,7 @@ ele3 = orbitalElements(sat(3))
 % Return the latitude, longitude, and altitude of the first satellite at time 02-June-2020 12:30:00 PM UTC.
 
 time = datetime(2020,6,02,12,30,0);
-pos = states(sat(1),time,"CoordinateFrame","geographic")
+pos = states(sat(1),time,"CoordinateFrame","geographic");
 
 % ############################################################################
 % Add Ground Stations
@@ -51,7 +51,7 @@ gs = groundStation(sc,"Name",name,"Latitude",lat, ...
 % Return the azimuth angle, elevation angle and range of the first satellite with respect to the Madrid Deep Space Communications Complex at time 02-June-2020 12:30:00 PM UTC.
 
 time = datetime(2020,6,02,12,30,0);
-[az,elev,r] = aer(gs(1),sat(1),time)
+[az,elev,r] = aer(gs(1),sat(1),time);
 
 % Play the satellite scenario with the satellites and ground stations.
 
