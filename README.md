@@ -1,9 +1,9 @@
 # ECE 4965/5965 Project 1
 
 ## First Option
-Project Title: Satellite Constellation Simulation Research
-Project Due Date: Thursday, October 13, 2022
-Project Goals:
+### Project Title: Satellite Constellation Simulation Research
+### Project Due Date: Thursday, October 20, 2022
+### Project Goals:
  * Gain an understanding of satellite orbits and how the orbits affect communications with users on the ground
  * Understand how satellite constellations affect system costs
  * Understand how satellite constellations affect user coverage
