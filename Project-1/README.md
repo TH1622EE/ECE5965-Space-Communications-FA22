@@ -38,3 +38,5 @@ This directory contains all of the MATLAB source code to execute the various orb
     `geoSim`
 
     `comboSim`
+
+4. To run the Live Script to follow a step-by-step execution process load "project1Sim.mlx" and execute each section by clicking "Run and Advance" to view the constellation, analyze changes in velocity, latency, doppler frequency, etc..
