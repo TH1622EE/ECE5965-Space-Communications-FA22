@@ -2,4 +2,4 @@
 
 # This script will launch MATLAB (local installation) and run the AEHF (GEO) sim
 
-matlab -r "run aehfsim.m"
+cd MATLAB && matlab -r "run geoSim.m"
