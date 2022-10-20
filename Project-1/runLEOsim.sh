@@ -2,4 +2,4 @@
 
 # This script will launch MATLAB (local installation) and run the Starlink (LEO) sim
 
-matlab -r "run starlinksim.m"
+cd MATLAB && matlab -r "run leoSim.m"
