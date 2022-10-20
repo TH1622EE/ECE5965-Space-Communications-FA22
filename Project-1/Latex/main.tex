@@ -75,19 +75,37 @@ MATLAB was the software tool used to display the constellation in geosynchronous
 \label{fig:4}
 \end{figure}
 
-\section{Conclusions}
-When compared to other orbits the geosynchronous earth orbit has the advantage of maintaining continuous coverage and providing multi-point simultaneous service over a large geographical area. The low earth orbit has negligible latency but requires significantly more satellites to adequately cover a small region with continuous service. LEO is an optimal solution for time-critical applications such as real-time image and video processing and streaming. The medium earth orbit has significantly less latency than GEO but still requires handoffs and compensation for doppler shift but has significantly better geographical coverage than LEO satellites. The MEO constellation is an optimal solution for services that require low-latency but not real-time image and video processing over a relatively large coverage area and the complexities introduced by handoffs and compensation for doppler shift in the onboard digital signal processing payload do not outweigh the benefits of placing the satellite in GEO despite the increased latency. Another constellation typically used for coverage in the polar regions is the Highly Elliptical Orbit (HEO) which is typically only used for this purpose and only provides service over a small duration of its orbital period. The following are examples of the LEO constellation using Starlink TLE files and the MEO constellation using currently operational GPS TLE files also acquired from the Space-Track.org website:
+\section{Other Orbits}
+Some of the other common orbits used in contemporary satellite communications is the low-earth orbit, medium-earth orbit, and highly-elliptical orbit. The following is an analysis of each to include orbital characteristics, advantages, and disadvantages when compared to the GEO:
+
+\subsection{Low-Earth Orbit}
+The low-earth orbit has an orbital period between ten to forty minutes, an orbital height between 500km to 1500km, has a shorter life span, low-latency (propagation loss), and requires between forty and eighty satellites to provide full earth coverage. Some of the advantages are increased frequency reuse due to small footprint (coverage area), coverage of the polar regions, and reduced cost of payload and terminal equipment. Some of the disadvantages are the number of satellites required to provide full-earth coverage, increased complexity of ground stations due to handoffs, and increased maintenance to maintain orbit due to atmospheric effects \cite{b18}. The following is a visual example of the low-earth orbit constellation using TLE files acquired from the Space-Track.org website for six Starlink satellites currently in orbit:
 \begin{figure}[h]
 \centerline{\includegraphics{constellation3copy.png}}
 \caption{Example of Low Earth Orbit}
 \label{fig:5}
 \end{figure}
+
+\subsection{Medium-Earth Orbit}
+The medium-earth orbit has an orbital period of two to eight hours, an orbital height between 5,000km and 12,000km, propagation loss higher than LEO but less than GEO, and requires between eight and twenty satellites to provide full-earth coverage. Some of the advantages are reduced latency and reduced cost. Some of the disadvantages are limited coverage per satellite from earth (2-8 hours), increased complexity of ground systems due to tracking and handoffs, and more satellites required to provide full-earth coverage \cite{b19}. The following is a visual example of the medium-earth orbit constellation using TLE files acquired form the Space-Track.org website for six GPS satellites currently in orbit:
 \begin{figure}[h]
 \centerline{\includegraphics{constellation4copy.png}}
 \caption{Example of Medium Earth Orbit}
 \label{fig:6}
 \end{figure}
-\\\\In conclusion, the orbital selection specific to a satellite constellation is a balance of cost and performance. Each constellation has its advantages and disadvantages, but due to the complexities introduced as a result of mm-wave W-band communications, satellites in relatively fixed positions are ideal. Furthermore, the additional coverage provided by significantly fewer satellites by which to provide high throughput communications is also ideal. 
+
+\subsection{Highly-Elliptical Orbit}
+The highly-elliptical orbit has an orbital period of twenty-four hours, an orbital height peaking at approximately 30,000km, with medium to high propagation losses depending on position in orbit. Advantages of the highly-elliptical orbit is access to polar regions and less costly. Disadvantages of the highly-elliptical orbit include ground tracking requirement and access limited to only 8 hours due to orbital path \cite{b20}.  The following is a visual example of the highly-elliptical earth orbit constellation using TLE files acquired form the Space-Track.org website for three Molniya satellites currently in orbit:
+\begin{figure}[h]
+\centerline{\includegraphics{constellation5copy.png}}
+\caption{Example of Highly-Elliptical Earth Orbit}
+\label{fig:7}
+\end{figure}
+
+
+\section{Conclusions}
+For the proposed use case requiring high-throughput mm-wave communications the Geosynchronous Earth Orbit is the optimal solution. Given the complexity and cost of payload subsystems to include but not limited to thermal, power, communications, propulsion, and attitude control systems, the ideal approach is to eliminate the complexity introduced as a result of handoffs and tracking. This tradeoff is biased in favor of continuous coverage with less satellites over performance with respect to latency and real-time applications. This system would require an advanced gimbal mounted phased array antennas as well as crosslink antennas at 60GHz and horn antennas to enable reliable worldwide communication capabilities. The mm-wave frequencies inherent to W-band communications will require very accurate pointing and therefore reducing the tracking complexity by using stationary satellites significantly diminishes the probability of issues with tracking control systems of antennas at the ground stations. 
+\\In conclusion, the orbital selection specific to a satellite constellation is a balance of cost and performance. Each constellation has its advantages and disadvantages, but due to the complexities introduced as a result of mm-wave W-band communications, satellites in relatively fixed positions are ideal. Furthermore, the additional coverage provided by significantly fewer satellites by which to provide high throughput communications is also ideal. The cost of the system is greater per satellite as well as launch and getting the satellite into orbit, but the overall cost relative to the lifespan of the system outweighs the additional costs inherent to comparable systems in GEO or LEO. Lastly, the constellations capabilities could be integrated and extended into polar systems to link via ground stations of other constellations and systems enabling full-earth coverage as a combination of at least a three satellite HEO constellation and the proposed GEO constellation. 
 
 \begin{thebibliography}{00}
 \bibitem{b1} E. Howell, "SPACE.com," 24 April 2015. [Online]. Available: https://www.space.com/29222-geosynchronous-orbit.html. [Accessed 27 September 2022]
@@ -107,6 +125,9 @@ When compared to other orbits the geosynchronous earth orbit has the advantage o
 \bibitem{b15} H. D. Curtis, Orbital Mechanics for Engineering Students, 3rd ed., Elsevier Ltd., 2014. 
 \bibitem{b16} RF Wireless World, "Advantages and disadvantes of GEO | Geosynchronous orbit | Geostationary orbit," [Online]. Available: https://www.rfwireless-world.com/Terminology/Advantages-and-Disadvantages-of-GEO-Geosynchronous-orbit.html. [Accessed 12 October 2022].
 \bibitem{b17} D. T. Withington, "Space on Budget," Armada International, 24 March 2020. [Online]. Available: https://www.armadainternational.com/2020/03/space-on-budget/. [Accessed 2 October 2022].
+\bibitem{b18} RF Wireless World, "Advantages and disadvantes of LEO | Geosynchronous orbit | Geostationary orbit," [Online]. Available: https://www.rfwireless-world.com/Terminology/Advantages-and-Disadvantages-of-LEO-orbit.html
+\bibitem{b19} RF Wireless World, "Advantages and disadvantes of MEO | Geosynchronous orbit | Geostationary orbit," [Online]. Available: https://www.rfwireless-world.com/Terminology/Advantages-and-Disadvantages-of-MEO-orbit.html
+\bibitem{b20} RF Wireless World, "Advantages and disadvantes of HEO | GEO vs MEO vs LEO vs HEO," [Online]. Available: https://www.rfwireless-world.com/Terminology/GEO-satellite-vs-MEO-vs-LEO-vs-Molniya-satellite.html
 \end{thebibliography}
 
 \end{document}
