@@ -8,7 +8,7 @@ sc = satelliteScenario(startTime,stopTime,sampleTime);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create Geosynchronous Satellite Constellation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-sats = satellite(sc, "orbitalData\TLE\GEOSYNC.tle");
+sats = satellite(sc, "orbitalData\TLE\starlink.tle");
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Generate Cameras for each Satellite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,4 +66,4 @@ accessIntervals(ac);
 % Display Scenario Viewer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 v = satelliteScenarioViewer(sc, ShowDetails=true);
-campos(v, 12, long, 8e7)
+campos(v, 12, long, 2e7)
