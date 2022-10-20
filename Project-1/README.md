@@ -1,7 +1,14 @@
 # ECE5965 Project 1 - Satellite Constellation Simulation Research
 
 ## Introduction
-This directory contains all of the MATLAB source code to execute the various orbital specific simulations scripts as well as LaTeX source code for the creation of the IEEE formatted report and all supporting documentation.
+This directory contains all of the MATLAB source code to execute the various orbital specific simulations scripts as well as LaTeX source code for the creation of the IEEE formatted report and all supporting documentation. The following table is a system and application overview of the build system for this repo:
+
+|  OS/App  |  Version  |
+|  :--     |  :--:     |
+| Windows  |  11       |
+| MATLAB   |  R2022b   |
+| Git      |  2.38.0   |
+
 
 ## Getting Started
 1. Clone this repos to your local machine using the following command:
