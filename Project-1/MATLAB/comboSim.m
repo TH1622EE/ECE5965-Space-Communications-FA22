@@ -8,7 +8,8 @@ sc = satelliteScenario(startTime,stopTime,sampleTime);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create Geosynchronous Satellite Constellation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-sats = satellite(sc, "orbitalData\TLE\combo.tle");
+% sats = satellite(sc, "orbitalData\TLE\combo.tle");
+sats = satellite(sc, "orbitalData\TLE\comboPlus.tle");
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Generate Cameras for each Satellite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -25,6 +26,10 @@ fov1 = fieldOfView(cam(1), "LineColor", 'r');
 fov2 = fieldOfView(cam(2), "LineColor", 'g');
 fov3 = fieldOfView(cam(3), "LineColor", 'b');
 fov4 = fieldOfView(cam(4), "LineColor", 'm');
+fov5 = fieldOfView(cam(5), "LineColor", 'r');
+fov6 = fieldOfView(cam(6), "LineColor", 'g');
+fov7 = fieldOfView(cam(7), "LineColor", 'b');
+fov8 = fieldOfView(cam(8), "LineColor", 'm');
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Display Orbital Element Data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,6 +37,10 @@ elements1 = orbitalElements(sats(1));
 elements2 = orbitalElements(sats(2));
 elements3 = orbitalElements(sats(3));
 elements4 = orbitalElements(sats(4));
+elements5 = orbitalElements(sats(5));
+elements6 = orbitalElements(sats(6));
+elements7 = orbitalElements(sats(7));
+elements8 = orbitalElements(sats(8));
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create Ground Station (GS) at UCCS Campus
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
