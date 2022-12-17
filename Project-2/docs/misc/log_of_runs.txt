@@ -1,0 +1,34 @@
+Contraint Length:		9
+Minimum Free Distance:	12
+Calculated BER:		0.001
+SNR @ BER of 0.001:	7.4103
+
+Contraint Length:		8
+Minimum Free Distance:	10
+Calculated BER:		0.001
+SNR @ BER of 0.001:	7.5103
+
+Contraint Length:		7
+Minimum Free Distance:	10
+Calculated BER:		0.001
+SNR @ BER of 0.001:	7.9103
+
+Contraint Length:		6
+Minimum Free Distance:	8
+Calculated BER:		0.001
+SNR @ BER of 0.001:	8.0103
+
+Contraint Length:		5
+Minimum Free Distance:	7
+Calculated BER:		0.001
+SNR @ BER of 0.001:	8.3103
+
+Contraint Length:		4
+Minimum Free Distance:	6
+Calculated BER:		0.001
+SNR @ BER of 0.001:	8.6103
+
+Contraint Length:		3
+Minimum Free Distance:	5
+Calculated BER:		0.001
+SNR @ BER of 0.001:	8.8103
